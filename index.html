@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Calc JavaScript</title>
+</head>
+<body>
+    <div id="heading">
+        <h1>Calculator - by Rishabh Panesar</h1>
+    </div>
+    <div>
+        <input type="number" name="num" id="num_1" placeholder="Number 1">
+    </div>
+    <div>
+        <select name="options" id="OPERATOR">
+            <option value='+'>+</option>
+            <option value='-'>-</option>
+            <option value='*'>&times;</option>
+            <option value='/'>/</option>
+        </select>
+    </div>
+    <div>
+        <input type="number" name="num" id="num_2" placeholder="Number 2">
+    </div>
+    <button id="eq">=</button>
+    <br>
+    <p id="sol">Solution</p>
+    <script>
+        let e = document.getElementById("eq");
+        e.addEventListener('click', function(){
+            let a = document.getElementById("num_1").value;
+            let b = document.getElementById("num_2").value;
+            let op = document.getElementById("OPERATOR").value;
+            let c = document.getElementById("sol");
+            switch(op){
+                case '+' :
+                    c.innerHTML = parseInt(a) + parseInt(b);
+                    console.log(c);
+                    break;
+                case '-' :
+                    c.innerHTML = a-b;
+                    break;
+                case '*' :
+                    c.innerHTML = a*b;
+                    break;
+                case '/' :
+                    c.innerHTML = a/b;
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

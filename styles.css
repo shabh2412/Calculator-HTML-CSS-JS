@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background: linear-gradient( to left,pink, aqua, pink);
+    font-size: 30px;
+    color: white;
+}
+
+h1{
+    color: black;
+}
+
+#OPERATOR{
+    padding: 20px auto;
+    font-size: 30px;
+    width: 9.5%;
+    text-align: center;
+    border-radius: 10%;
+}
+
+#sol{
+    border-radius: 5px;
+    border: 3px solid black;
+    width: 150px;
+    margin: 20px auto;
+    color: #000;
+    background-color: whitesmoke;
+}
+
+#eq{
+    border-radius: 10%;
+    padding: 20px auto;
+    font-size: 30px;
+}
+
+input{
+    border: 2px solid black;
+    padding: 10px 10px;
+    color: green;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+input:focus{
+    color: red;
+}
